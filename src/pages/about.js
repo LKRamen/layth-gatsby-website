@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Step 1: Import React
 import * as React from 'react'
 
