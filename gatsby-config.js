@@ -4,19 +4,18 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Layth Gatsby Website",
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "My Super Cool Blog",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/blog`,
-      }
+        path: `${__dirname}/blog/`,
+      },
     },
     "gatsby-plugin-mdx",
   ],
-}
+};
