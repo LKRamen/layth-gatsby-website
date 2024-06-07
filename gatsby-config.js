@@ -4,6 +4,7 @@
 
 module.exports = {
   siteMetadata: {
+    title: "Layth Gatsby Website",
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
