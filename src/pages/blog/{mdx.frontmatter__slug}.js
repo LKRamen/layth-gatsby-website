@@ -4,7 +4,7 @@ import { MDXrenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
@@ -20,7 +20,6 @@ export const query = graphql`
         title
         date(formatString: "MMMM D, YYYY")
       }
-      excerpt
     }
   }
 `
