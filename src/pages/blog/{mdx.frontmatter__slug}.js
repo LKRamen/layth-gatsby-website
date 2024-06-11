@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 const BlogPost = () => {
   return (
@@ -12,4 +12,4 @@ const BlogPost = () => {
 
 export const Head = () => <Seo title="Super Cool Blog Posts" />
 
-export default BlogPost 
+export default BlogPost
