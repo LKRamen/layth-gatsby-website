@@ -11,7 +11,7 @@ const BlogPost = ({ data, children }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>Posted: {data.mdx.frontmatter.date}</p>
       <GatsbyImage
-      image={image}
+      image={data.mdx.frontmatter.hero_image}
       alt={data.mdx.frontmatter.hero_image_alt}
     />
             <p>
