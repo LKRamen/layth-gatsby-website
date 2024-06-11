@@ -8,7 +8,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <MDXrenderer>{data.mdx.excerpt}</MDXrenderer>
+      <p>{data.mdx.excerpt}</p>
     </Layout>
   )
 }
