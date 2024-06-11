@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { MDXrenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
@@ -8,7 +7,7 @@ const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <MDXrenderer>{data.mdx.excerpt}</MDXrenderer>
+      {data.mdx.excerpt}
     </Layout>
   )
 }
