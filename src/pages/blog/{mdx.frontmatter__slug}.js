@@ -8,7 +8,7 @@ const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <p>{data.mdx.excerpt}</p>
+      <MDXrenderer>{data.mdx.excerpt}</MDXrenderer>
     </Layout>
   )
 }
@@ -20,6 +20,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM D, YYYY")
       }
+    excerpt
     }
   }
 `
